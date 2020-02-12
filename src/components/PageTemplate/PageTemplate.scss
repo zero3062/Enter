@@ -1,0 +1,84 @@
+@import 'utils';
+
+.page-template {
+  margin: 0;
+  height: 50px;
+  background: white;
+  padding-top: 8px;
+  position: fixed;
+  width: 100%;
+
+  img {
+    padding-top: 7px;
+    width: 30px;
+    height: auto;
+    position: absolute;
+    left: 20px;
+  }
+
+  h1 {
+    margin: 0;
+    padding: 0;
+    font-size: 30px;
+    color: $oc-blue-4;
+    position: absolute;
+    left: 70px;
+  }
+
+  button {
+    font-size: 20px;
+    color: $oc-blue-4;
+    border: 1px solid $oc-blue-4;
+    border-radius: 2px;
+    background-color: white;
+    padding: 4px 12px;
+    margin-top: 7px;
+
+    &:hover {
+      background-color: $oc-blue-4;
+      color: white;
+    }
+
+    &:active {
+      background-color: $oc-blue-9;
+      color:white
+    }    
+  }
+}
+
+.main-input {
+  margin-top: 5px;
+  width: 1070px;
+  height: 30px;
+  color: black;
+  background: white;
+  font-size: 20px;
+  position: absolute;
+  left: 170px;
+  padding-left: 10px;
+
+  @media(max-width: 768px) {
+    width:300px;
+  }
+}
+
+.login-button {
+  position: absolute;
+  right: 170px;
+
+  @media(max-width: 768px) {
+    position: absolute;
+    right: 120px;
+  }
+}
+
+
+.signup-button {
+  position: absolute;
+  right: 50px;
+
+  @media(max-width: 768px) {
+    position: absolute;
+    right: 20px;
+  }
+}
